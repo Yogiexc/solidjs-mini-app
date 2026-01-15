@@ -40,7 +40,7 @@ export default function BenchmarkSuite() {
   
   // Benchmark 2: List Rendering
   const benchmarkListRendering = async (): Promise<number> => {
-    const [items, setItems] = createSignal(
+    const [, setItems] = createSignal(
       Array.from({ length: 10000 }, (_, i) => ({ id: i, value: i }))
     );
     
