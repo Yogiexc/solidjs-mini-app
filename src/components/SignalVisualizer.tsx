@@ -20,7 +20,7 @@ interface SignalLog {
 export default function SignalVisualizer() {
   const [isVisible, setIsVisible] = createSignal(false);
   const [logs, setLogs] = createSignal<SignalLog[]>([]);
-  const [maxLogs, setMaxLogs] = createSignal(50);
+  const [maxLogs] = createSignal(50);
   
   // Example signals to visualize
   const [counter, setCounter] = createSignal(0);
